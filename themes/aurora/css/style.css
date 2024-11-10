@@ -22,7 +22,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    background-color: pink;
+    background-color: rgb(129, 187, 187);
 
 }
 
@@ -47,6 +47,11 @@ body {
     padding: 3em 3em 3em 0;
 }
 
+.logo img {
+    max-width: 340px;
+    max-height: 340px;
+    
+}
 @media (max-width: 767px) {
     .title, .logo {
         padding: 1em 1em 1em 0;
