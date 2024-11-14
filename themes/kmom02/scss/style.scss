@@ -1,0 +1,39 @@
+// styles.scss
+@use 'variables';
+@use 'nav';
+@use 'footer';
+@use '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@use '../../shared/fontawesome/scss/brands';
+@use '../../shared/fontawesome/scss/solid';
+@use '../../shared/fontawesome/scss/regular';
+@use '../../node_modules/normalize.css/normalize';
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: variables.$background-color;
+    font-family: variables.$largeText;
+}
+
+* {
+    color: variables.$font-color;
+}
+
+h1 {
+    font-family: variables.$largeText;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.main {
+    flex: 1;
+}
