@@ -71,7 +71,6 @@
 .nav-toggle {
   display: none;
   background: none;
-  border: none;
   color: #fff;
   font-size: 24px;
   cursor: pointer;
@@ -6536,7 +6535,8 @@ template {
   display: none;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
 }
@@ -6562,4 +6562,5 @@ h1 {
 
 .main {
   flex: 1;
+  margin: 20px;
 }
