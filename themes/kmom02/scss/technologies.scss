@@ -1,0 +1,83 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 1em;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+}
+
+.landingpage {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2em;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.landingpage h1 {
+  grid-column: span 3;
+  justify-self: center;
+  text-align: center;
+  font-size: 2em;
+  color: #486c77;
+  margin-bottom: 1em;
+}
+
+.landingpage a:hover {
+  color: #efb072;
+  border-color: #486c77;
+  background-color: #f0f0f0;
+  text-decoration: underline;
+  transition: all 0.3s ease-in-out;
+}
+
+[class^="box"] {
+  text-decoration: none;
+  color: #486c77;
+  font-weight: bold;
+  padding: 1.5em;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  text-align: center;
+  display: block;
+  transition: all 0.3s ease;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  grid-column: span 1;
+}
+
+[class^="box"]:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-color: #486c77;
+}
+
+.box h3 {
+  margin: 0;
+  font-size: 1.25em;
+  color: inherit;
+}
+
+.box.wide {
+  grid-column: span 3;
+}
+
+@media (max-width: 768px) {
+  .landingpage {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .box {
+    padding: 1em;
+    font-size: 1em;
+  }
+
+  .landingpage h1 {
+    font-size: 1.5em;
+  }
+}

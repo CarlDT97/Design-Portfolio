@@ -1,0 +1,60 @@
+.landingpage {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    min-height: fit-content;
+}
+
+  .landingpage h1 {
+    grid-column: span 3;
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .landingpage .box {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 1;
+    border: 1px dotted #333;
+    border-radius: 4px;
+  }
+  
+  .landingpage .box h3 {
+    margin: 10px 0;
+  }
+  
+  .landingpage .box:hover {
+    transform: scale(1.01);
+  }
+  
+  .landingpage a {
+    text-decoration: none;
+    padding: 10px 15px;
+    position: relative;
+    overflow: hidden;  
+    color: inherit;
+  }
+
+  
+  @media (max-width: 768px) {
+    .landingpage {
+      grid-template-columns: 2fr;
+      min-height: fit-content;
+    }
+    
+    .landingpage h1 {
+      grid-column: span 1;
+    }
+  
+    .landingpage .box {
+      grid-column: span 1;
+    }
+  }
+  

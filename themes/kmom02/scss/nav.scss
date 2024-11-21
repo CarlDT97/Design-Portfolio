@@ -4,6 +4,7 @@
   background-color: variables.$header-background-color;
   color: variables.$header-text-color;
   padding: 15px 25px;
+  max-width: 100vw;
 }
 
 .site-header {
@@ -22,7 +23,7 @@
 
 .title {
   font-family: variables.$large-text;
-  font-size: 24px;
+  font-size: 1em;
   font-weight: bold;
   text-transform: uppercase;
   color: variables.$header-text-color;

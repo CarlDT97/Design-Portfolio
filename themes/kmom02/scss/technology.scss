@@ -1,0 +1,119 @@
+@use 'variables';
+
+.tech {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1em;
+  padding: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tech .menu {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+  background-color: #efb072;
+  padding: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tech .menu h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+  color: #486c77;
+  text-align: center;
+}
+
+.tech .menu .sidebar p {
+  margin: 0.5em 0;
+}
+
+.tech .menu .sidebar a {
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+  color: #486c77;
+}
+
+.tech .menu .sidebar a:hover {
+  color: #f0f0f0;
+  text-decoration: underline;
+}
+
+.tech .article {
+  flex: 3 1 75%;
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #486c77;
+}
+
+.tech .article a {
+  color: #486c77;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.tech .article a:hover {
+  color: #efb072;
+  text-decoration: underline;
+}
+
+.tech pre {
+  font-style: italic;
+  margin-left: 1em;
+  padding-left: 1em;
+  border-left: 0.5em solid #f5f5f5;
+}
+
+.tech a {
+  text-decoration: none;
+  color: #486c77;
+  font-weight: bold;
+  padding: 1em;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  text-align: center;
+  display: block;
+  transition: all 0.3s ease;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tech a:hover {
+  color: #efb072;
+  border-color: #486c77;
+  background-color: #f0f0f0;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .tech {
+    flex-direction: column;
+  }
+
+  .tech .menu,
+  .tech .article {
+    flex: 1 1 100%;
+    margin-bottom: 1em;
+  }
+
+  .tech .menu {
+    padding: 1em;
+  }
+
+  .menu {
+    min-width: 80vw;
+  }
+
+  .article {
+    max-width: 80vw;
+    float: left;
+  }
+}

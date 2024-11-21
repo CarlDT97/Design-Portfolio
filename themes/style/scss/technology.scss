@@ -1,0 +1,69 @@
+@use 'variables';
+
+.tech {
+    display: flex; /* Use Flexbox */
+    flex-grow: 1;
+    gap: 20px; /* Space between sidebar and content */
+    padding: 20px;
+}
+
+/* Sidebar (menu) */
+.menu {
+    flex: 1; /* Sidebar takes up 1 fraction of the space */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+}
+
+.menu h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.sidebar p {
+    margin: 10px 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    padding: 10px 15px;
+    position: relative;
+    overflow: hidden;
+    color: variables.$font-color;
+}
+
+.sidebar a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;  
+    background-color: #efb072;
+    transition: width 0.3s ease-out;
+  }
+
+.sidebar a:hover::after {
+  width: 100%;
+}
+
+.article {
+    flex: 3; 
+    padding: 20px;
+    border-left: 1px solid #333 ;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tech {
+        flex-direction: column; 
+    }
+
+    .article {
+        border-left: 1px variables.$background-color;
+        border-top: 1px solid #333 ;
+
+    }
+    .menu {
+        margin-bottom: 20px;
+    }
+}
