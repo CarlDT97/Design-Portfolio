@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 .header {
-  background-color: #FFFFFF;
+  background-color: #fff;
   color: #333;
   padding: 10px 20px;
   border-bottom: #333 solid 1px;
@@ -17,7 +17,6 @@
 }
 
 .title h1 {
-  font-size: 24px;
   margin: 0;
   text-decoration: none;
 }
@@ -194,17 +193,16 @@
   }
 }
 .tech {
-  display: flex; /* Use Flexbox */
+  display: flex;
   flex-grow: 1;
-  gap: 20px; /* Space between sidebar and content */
+  gap: 20px;
   padding: 20px;
 }
 
-/* Sidebar (menu) */
 .menu {
-  flex: 1; /* Sidebar takes up 1 fraction of the space */
+  flex: 1;
   padding: 20px;
-  border-radius: 8px; /* Rounded corners */
+  border-radius: 8px;
 }
 
 .menu h2 {
@@ -245,13 +243,12 @@
   border-left: 1px solid #333;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .tech {
     flex-direction: column;
   }
   .article {
-    border-left: 1px #FFFFFF;
+    border-left: 1px #fff;
     border-top: 1px solid #333;
   }
   .menu {
@@ -6756,12 +6753,13 @@ template {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #333;
-  background-color: #FFFFFF;
+  background-color: #fff;
 }
 
 body {
@@ -6773,7 +6771,7 @@ body {
 h1 {
   color: #333;
   font-size: 32px;
-  font-weight: 200;
+  font-weight: 100;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
@@ -6781,7 +6779,7 @@ h1 {
 h2 {
   color: #333;
   font-size: 28px;
-  font-weight: 200;
+  font-weight: 300;
   text-transform: uppercase;
 }
 
