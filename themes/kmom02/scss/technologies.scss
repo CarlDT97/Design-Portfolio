@@ -35,7 +35,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-[class^="box"] {
+[class^='box'] {
   text-decoration: none;
   color: #486c77;
   font-weight: bold;
@@ -51,7 +51,7 @@
   grid-column: span 1;
 }
 
-[class^="box"]:hover {
+[class^='box']:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-color: #486c77;
