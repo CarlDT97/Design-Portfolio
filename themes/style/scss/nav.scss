@@ -1,12 +1,8 @@
 @use 'variables';
 
 .header {
-  background-color: variables.$background-color;
-  color: variables.$font-color;
   padding: 10px 20px;
-  border-bottom: #333 solid 1px;
 }
-
 
 .site-header {
   display: flex;
@@ -27,14 +23,6 @@
   text-decoration: none;
 }
 
-.title.tagline {
-  font-size: variables.$p-font-size;
-  color: variables.$font-color;
-}
-
-.nav-toggle i {
-  color: #333;
-}
 
 .nav {
   display: flex;
@@ -55,6 +43,7 @@
   padding: 10px 15px;
   position: relative;
   overflow: hidden;
+  color: #efb072;
 }
 
 .nav a::after {
@@ -64,7 +53,6 @@
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #efb072;
   transition: width 0.3s ease-out;
 }
 

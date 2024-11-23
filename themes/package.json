@@ -120,10 +120,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "stylelint \"**/*.scss\"",
-    "style": "sass style/scss/style.scss style/css/style.css --no-source-map",
-    "style-min": "sass style/scss/style.scss style/css/style.min.css --no-source-map --style compressed"
-   
-  },
+    "watch": "sass style/scss/style.scss:style/css/style.css style/scss/style-dark.scss:style/css/style-dark.css --no-source-map --watch",
+    "watch-min": "sass style/scss/style.scss:style/css/style.min.css style/scss/style-dark.scss:style/css/style-dark.min.css --no-source-map --watch --style compressed",
+    "style": "npm run style-light && npm run style-dark",
+    "style-min": "npm run style-light-min && npm run style-dark-min",
+    "style-dark": "sass style/scss/style-dark.scss style/css/style-dark.css --no-source-map",
+    "style-dark-min": "sass style/scss/style-dark.scss style/css/style-dark.min.css --no-source-map --style compressed",
+    "style-light": "sass style/scss/style.scss style/css/style.css --no-source-map",
+    "style-light-min": "sass style/scss/style.scss style/css/style.min.css --no-source-map --style compressed"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",

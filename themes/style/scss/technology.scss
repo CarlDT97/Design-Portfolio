@@ -27,7 +27,6 @@
   padding: 10px 15px;
   position: relative;
   overflow: hidden;
-  color: variables.$font-color;
 }
 
 .sidebar a::after {
@@ -37,7 +36,6 @@
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #efb072;
   transition: width 0.3s ease-out;
 }
 
@@ -48,18 +46,11 @@
 .article {
   flex: 3;
   padding: 20px;
-  border-left: 1px solid #333;
 }
 
 @media (max-width: 768px) {
   .tech {
     flex-direction: column; 
-  }
-
-  .article {
-    border-left: 1px variables.$background-color;
-    border-top: 1px solid #333;
-
   }
 
   .menu {

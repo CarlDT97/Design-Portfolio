@@ -1,4 +1,4 @@
-@use 'variables';
+@use 'variables-dark' as variables;
 @use 'nav';
 @use 'footer';
 @use 'technologies.scss';
@@ -37,7 +37,7 @@ body {
 }
 
 h1 {
-  color: variables.$font-color;
+  color: variables.$font-color-hx;
   font-size: variables.$h1-font-size;
   font-weight: variables.$font-h1-weight;
   letter-spacing: variables.$letter-space-h;
@@ -46,64 +46,64 @@ h1 {
 }
 
 h2 {
-  color: variables.$font-color;
+  color: variables.$font-color-hx;
   font-size: variables.$h2-font-size;
   font-weight: variables.$font-h2-weight;
   text-transform: uppercase;
 }
 
 p {
-  color: variables.$font-color;
+  color: variables.$font-color-p;
   font-size: variables.$p-font-size;
   font-weight: variables.$font-p-weight;
 }
 
 a {
-  color: #333;
   text-transform: uppercase;
+  color: variables.$font-color-p;
+
 }
 
 .header {
   background-color: variables.$background-color;
-  color: variables.$font-color;
-  border-bottom: #333 solid 1px;
+  color: variables.$font-color-p;
+  border-bottom: variables.$font-color-p solid 1px;
 }
 
 .landingpage .box {
-  border: 1px dotted #333;
+  border: 1px dotted variables.$font-color-p;
+  
 }
 
 .title.tagline {
   font-size: variables.$p-font-size;
-  color: variables.$font-color;
+  color: variables.$font-color-p;
 }
-
+  
 .nav-toggle i {
-  color: #333;
+  color: variables.$font-color-hx;
 }
 
 .nav a {
-  color: #333;
+  color: variables.$font-color-hx;
 }
 
-
 .main h1 {
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid variables.$font-color-p;
 }
 
 .article {
-  flex: 3;
-  padding: 20px;
-  border-left: 1px solid #333;
+
+  border-left: 1px solid variables.$font-color-p;
 }
 
 .sidebar a::after,
 .nav a::after {
-  background-color: #333;
+  background-color: variables.$font-color-hx;
 }
 @media (max-width: 768px) {
   .article {
     border-left: 1px variables.$background-color;
-    border-top: 1px solid #333;
+    border-top: 1px solid variables.$font-color-p;
   }
 }
