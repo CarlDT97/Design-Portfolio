@@ -52,6 +52,13 @@ h2 {
   text-transform: uppercase;
 }
 
+h3 {
+  color: variables.$font-color-hx;
+  font-size: variables.$h3-font-size;
+  font-weight: variables.$font-h2-weight;
+  text-transform: uppercase;
+}
+
 p {
   color: variables.$font-color-p;
   font-size: variables.$p-font-size;

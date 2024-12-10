@@ -48,6 +48,11 @@
   padding: 20px;
 }
 
+.tech img{
+  width: 580px;
+  height: 380px;
+}
+
 @media (max-width: 768px) {
   .tech {
     flex-direction: column; 

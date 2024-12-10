@@ -18,5 +18,5 @@ techs:
   - name: SQLite
     class: sqlite
 ---
-Technologies
+Dev Stack
 ==========================

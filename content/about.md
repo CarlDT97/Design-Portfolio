@@ -7,5 +7,7 @@ Description: What we use to build this website
 <h1>About</h1>
 </div>
 <div class="main-content">
+<p>
 Denna hemsida är byggd med twig, scss, php, html.  
+</p>
 </div>

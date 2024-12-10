@@ -101,7 +101,7 @@
 }
 
 .footer .social a:hover {
-  color: #efb072;
+  color: #8fd1c9;
   transform: scale(1.2);
 }
 
@@ -224,6 +224,11 @@
 .article {
   flex: 3;
   padding: 20px;
+}
+
+.tech img {
+  width: 580px;
+  height: 380px;
 }
 
 @media (max-width: 768px) {
@@ -6757,6 +6762,13 @@ h1 {
 h2 {
   color: #8fd1c9;
   font-size: 28px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: #8fd1c9;
+  font-size: 18px;
   font-weight: 300;
   text-transform: uppercase;
 }
